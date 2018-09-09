@@ -111,6 +111,34 @@
     webpack "^3.11.0"
     webpack-manifest-plugin "^1.3.2"
 
+"@stimulus/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@stimulus/core/-/core-1.1.0.tgz#0fe7f5bf555aa2a31b4576f2b3389fd192a27138"
+  dependencies:
+    "@stimulus/mutation-observers" "^1.1.0"
+
+"@stimulus/multimap@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@stimulus/multimap/-/multimap-1.1.0.tgz#f373ff72feab4218b2a9ae00866acc47d5032f5e"
+
+"@stimulus/mutation-observers@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@stimulus/mutation-observers/-/mutation-observers-1.1.0.tgz#8744d8b37302baeffcdd9123021c55084fb82beb"
+  dependencies:
+    "@stimulus/multimap" "^1.1.0"
+
+"@stimulus/polyfills@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@stimulus/polyfills/-/polyfills-1.1.0.tgz#cac83e4e43557f9192ce5f67f2c9ac00f3abe910"
+  dependencies:
+    core-js ">=2.5.3"
+    element-closest ">=2.0.2"
+    mutation-observer-inner-html-shim ">=1.0.0"
+
+"@stimulus/webpack-helpers@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@stimulus/webpack-helpers/-/webpack-helpers-1.1.0.tgz#17f00ea6eaa38b490ba84fec6f6c436c604a4a85"
+
 "@webpack-contrib/schema-utils@^1.0.0-beta.0":
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/@webpack-contrib/schema-utils/-/schema-utils-1.0.0-beta.0.tgz#bf9638c9464d177b48209e84209e23bee2eb4f65"
@@ -1697,7 +1725,7 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
-core-js@^2.4.0, core-js@^2.5.0:
+core-js@>=2.5.3, core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
 
@@ -2221,6 +2249,10 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30, electron-to-chromium@
 elegant-spinner@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/elegant-spinner/-/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
+
+element-closest@>=2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/element-closest/-/element-closest-2.0.2.tgz#72a740a107453382e28df9ce5dbb5a8df0f966ec"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -4681,6 +4713,10 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
+mutation-observer-inner-html-shim@>=1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mutation-observer-inner-html-shim/-/mutation-observer-inner-html-shim-1.0.0.tgz#8129c5e3a98ec9d473d8e10a05dc97a70fde5530"
+
 mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
@@ -6972,6 +7008,13 @@ stdout-stream@^1.4.0:
   resolved "https://registry.yarnpkg.com/stdout-stream/-/stdout-stream-1.4.0.tgz#a2c7c8587e54d9427ea9edb3ac3f2cd522df378b"
   dependencies:
     readable-stream "^2.0.1"
+
+stimulus@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stimulus/-/stimulus-1.1.0.tgz#d313e59bc0085eec5e072a401e0fb2c5fb0a0301"
+  dependencies:
+    "@stimulus/core" "^1.1.0"
+    "@stimulus/webpack-helpers" "^1.1.0"
 
 stream-browserify@^2.0.1:
   version "2.0.1"
